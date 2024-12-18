@@ -1,0 +1,35 @@
+.styled-background {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.foreground {
+  position: absolute;
+  top: -90px;
+  right: 90px;
+}
+
+.foreground img {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .styled-background {
+    min-height: 30vh;
+  }
+
+  .foreground {
+    width: 50%;
+    top: -40px;
+    right: 0;
+    z-index: -2;
+  }
+
+  .foreground img {
+    width: 90%;
+  }
+}
